@@ -68,7 +68,7 @@
           this.tickets = response.data.tickets;
           return true;
         } catch (error) {
-          console.log(error);
+          return null;
         }
       },
       time(d) {
@@ -90,7 +90,7 @@
           this.getTickets();
           return true;
         } catch (error) {
-          console.log(error);
+          return false;
         }
       }
     }
